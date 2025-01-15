@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Code Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Side Images -->
+    <div class="side-images">
+        <img src="images/left.png" alt="Minecraft Left Image" class="left-image">
+        <img src="images/right.png" alt="Minecraft Right Image" class="right-image">
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-us" id="about-us">
+        <h1>About Us</h1>
+        <p>Welcome to our secure and trustworthy Minecraft code verification website. We prioritize your security and privacy, ensuring that all your data remains confidential.</p>
+        <p>Our website uses state-of-the-art encryption methods to make sure your Minecraft redeem codes are handled safely. We aim to offer the best service for players around the world!</p>
+        
+        <!-- Star Rating -->
+        <div class="star-rating">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9734;</span>
+            <span>4.7</span>
+        </div>
+    </div>
+
+    <!-- Redeem MC Code Button -->
+    <button class="redeem-button" onclick="scrollToRedeem()">Redeem MC Code</button>
+
+    <!-- Redeem Code Section -->
+    <div class="redeem-section" id="redeem-section">
+        <h2>Enter the 12-Digit Minecraft Redeem Code below:</h2>
+        <input type="text" id="redeem-code" placeholder="Enter 12-digit code" maxlength="12">
+        <button onclick="verifyCode()">Verify Code</button>
+        <p id="verification-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
